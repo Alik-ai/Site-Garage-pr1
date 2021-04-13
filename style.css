@@ -1,0 +1,24 @@
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: blue;
+}
+.flotte{
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+.service{
+    background-color: blue;
+}
+.horaire{
+    border: solid gray 5px;
+}
+.image{
+   height: auto;
+   width: 100%;
+}
+.jaune{
+    margin: 0;
+    clear:left;
+}
