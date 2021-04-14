@@ -22,3 +22,13 @@ h1{
     margin: 0;
     clear:left;
 }
+.Rdv{
+    border: 3px solid red;
+}
+.personne{
+    height: auto;
+    width: 100%;
+}
+.fly{
+    float: right;
+}
