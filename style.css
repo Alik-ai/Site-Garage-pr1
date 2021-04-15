@@ -1,3 +1,7 @@
+.navbar{
+    border: solid black 2px;
+    background-color: blue;
+}
 h1{
     font-size: 60px;
     text-align: center;
@@ -9,7 +13,7 @@ h1{
     height: 150px;
 }
 .service{
-    background-color: blue;
+    background-color: #038AD1;
 }
 .horaire{
     border: solid gray 5px;
@@ -31,4 +35,8 @@ h1{
 }
 .fly{
     float: right;
+}
+.formulaire{
+    border: solid #038AD1 2px;
+    
 }
