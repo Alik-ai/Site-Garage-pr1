@@ -10,151 +10,242 @@
 </head>
 <body>
     <section class="container">
-        <div>
-            <img class="flotte" src="./Image/Logo.png" alt="_"> 
-            </p>
-            <h1>Méca'Auto</h1>
-            <hr>
-            <p>Bienvenue sur le site de Méca'Auto sur ce site vous trouverais toute les informations utiles sur le garage,
-                nous sommes très heureux de travailler avec vous.
-            </p>
-        </div> 
-        <div class="row jaune px-0">  
-            <div class="col-12 col-md-3 px-0 service">
-                <h2> Service proposer par notre équipe</h2>
-                <ol>
-                    <li>Moteur</li>
-                    <li>Carosserie</li>
-                    <li>Pneu</li>
-                    <li>Suspension</li>
-                    <li>Fenêtre</li>
-                    <li>Cable électrique</li>
-                    <li></li>
-                    <li></li>
-                </ol>
-            </div>
-         <!--Horaire et Caroussel-->
-            <div class="col">
-                <div class="col-12 col-md-6 offset-md-6 px-0 horaire">
-                    <h2>Horaires d'ouverture</h2>
-                    <ul>
-                        <li>Lundi 8h-12h / 13h30-19h </li>
-                        <li>Mardi 8h-12h / 13h30-19h</li>
-                        <li>Mercredi 8h-12h / 13h30-19h</li>
-                        <li>Jeudi 8h-12h / 13h30-19h</li>
-                        <li>Vendredi 8h-12h / 13h30-19h</li>
-                        <li>Samedi 8h-12h / 13h30-19h</li>
-                        <li>Dimanche 8h-12h </li>
-                    </ul>
-                </div>
-             <!--Fin Horaire-->
-             <!--Début du Caroussel-->
-                <div class="col-12 col-md-8 offset-md-4 carousel">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./Image/GPG/Avant-Après.jpg" class="image" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Image/GPG/GpG1.jpg" class="image" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Image/GPG/GpG2.jpg" class="image " alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Image/GPG/GpG3.jpg" class="image" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Image/GPG/GpG4.jpg" class="image" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Image/GPG/GpG5.jpg" class="image" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./Image/GPG/GpG6.jpg" class="image" alt="...">
-                            </div>
-                        </div>
+        <nav class="navbar navig navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="./Image/Logo.png" class="logo" alt="">
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#maps">Adresse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#rdv">Rendez-vous</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-          <!--Fin du Caroussel-->
-          <!--Google Maps and Formulaire de rendez-vous-->
-        <div class="row mx-0">
-            <div class="col-12 col-md-6 px-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.7807719737543!2d5.337793615090218!3d45.95566300853675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b513ff230fa51%3A0xc647f91b106ce3df!2sOnlineformapro!5e0!3m2!1sfr!2sfr!4v1618316731271!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-         <!--Formulaire de rendez-vous-->
-            <div class="col-12 col-md-6 px-0 formulaire">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Adresse E-mail :</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <form action="/action_page.php">
-                    <label for="data-bs-ride">Choisir la date : </label>
-                    <input type="date" id="garage" name="Rendez-vous">
+                </nav>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Chercher" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Rechercher</button>
                 </form>
-                <label for="pet-select">Définir la raison :</label>
-                <select name="pets" id="pet-select">
-                    <option value="">Choisissez la raison</option>
-                    <option value="dog">Moteur</option>
-                    <option value="cat">Carosserie</option>
-                    <option value="hamster">Pneu</option>
-                    <option value="parrot">Suspension</option>
-                    <option >Fenêtre</option>
-                    <option >Cable éléctrique</option>
-                </select>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Ajouter un commentaire :</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Commentaire" rows="3"></textarea>
-                </div>
-                <input class="fly" type="submit">
             </div>
-        </div>
-        <!--Fin de formulaire de rendez-vous-->
-        <!--Caroussel équipe--> 
+        </nav>
         <div>
-            <div>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <h3 id="se"> Services proposés par notre équipe :</h3>
+            <ol>
+                <div class="row ">
+                    <div class="col-12 col-sm-4 col-services">
+                        <li>                            
+                            <img src="./Image/icones/colone 1/malfunction-indicador.png" alt=""> Moteur<br>
+                            <p>Nettoyage du moteur, changement de pièce </p> 
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colone 1/avant-de-voiture-sportive.png"> Carosserie <br>
+                            <p>Réparation de la carrosserie, peinture </p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colone 1/voiture.png" width="16px" alt=""> Pneumatique <br>
+                            <p>Changement des pneus</p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colone 1/porte-de-voiture.png" alt=""> Fenêtre <br>
+                            <p>Customisation des fenêtres, pare brise</p>
+                        </li>
+                    </div>
+                    <div class="col-12 col-sm-4  col-services">
+                        <li> 
+                            <img src="./Image/icones/colonne 2/carjumper_118024.png" width="20px" alt=""> Cable électrique <br>
+                            <p>Changement des fils </p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colonne 2/sparkplug_4970.png" width="16px" alt=""> Allumage <br>
+                            <p>Reparation des voitures qui ne s'allume plus</p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colonne 2/amortisseur.png" alt=""> Amortisseurs <br>
+                            <p>Revisions des amortisseurs</p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colonne 2/air-filter.png" alt=""> Filtration <br>
+                            <p>Nettoyage des filtres à air ...</p>
+                        </li>
+                    </div>
+                    <div class="col-12 col-sm-4  col-services">
+                        <li> 
+                            <img src="./Image/icones/colonne 3/frein.png" alt=""> Freinage <br>
+                            <p>Révision des disque de frein, des cables de freins...</p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colonne 3/eclairage-de-la-voiture.png" alt=""> Eclairage <br>
+                            <p>Changement et revisions des lampes</p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colonne 3/water.png" alt=""> Essuie-glace
+                            <p>Changement, verification, placement d'essuie glace</p>
+                        </li>
+                        <li> 
+                            <img src="./Image/icones/colonne 3/climatisation.png" alt=""> Climatisation <br>
+                            <p>Verification de la climatisation</p>
+                        </li>
+                    </div>
+                </div>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./Image/GEG/Berenice.jpg" class="personne" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <p>La secretaire de l'équipe, Berenice très accueillante avec un beau sourire et vous aide au moindre problème</p>
+                        <div class="carousel-item active">
+                            <img src="./Image/GPG/Avant-Après.jpg" class="image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GPG/GpG1.jpg" class="image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GPG/GpG2.jpg" class="image " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GPG/GpG3.jpg" class="image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GPG/GpG4.jpg" class="image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GPG/GpG5.jpg" class="image" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GPG/GpG6.jpg" class="image" alt="...">
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./Image/GEG/Mamadou.jpg" class="personne" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <p>Le jeune mécanacien de l'équipe, Mamadou très gentil et compréhensif </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">   
+                <a id="rdv"></a>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Adresse E-mail :</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="adresse@exemple.com">
+                    </div>
+                    <form action="/action_page.php">
+                        <label for="data-bs-ride">Choisir la date : </label>
+                        <input type="date" id="garage" name="Rendez-vous">
+                        <br>
+                        <label for="service-select">Choisissez le service :</label>
+                        <select name="service" id="service-select">
+                            <option >Moteur</option>
+                            <option >Carosserie</option>
+                            <option >Pneu</option>
+                            <option >Suspension</option>
+                            <option >Fenêtre</option>
+                            <option >Cable éléctrique</option>
+                            <option >Allumage</option>
+                            <option >Amortisseurs</option>
+                            <option >FIltration</option>
+                            <option >Freinage</option>
+                            <option >Eclairage</option>
+                            <option >Essuie-glace</option>
+                            <option >Climatisation</option>
+                            <option >Autre...</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Ajouter un commentaire :</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Commentaire" rows="3"></textarea>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Image/GEG/Pablo.jpg" class="personne" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <p>Le chef de l'équipe, Pablo il sait tous, sait tous faire dans la mécanique depuis bébé .</p>
+                        <div class="fly">
+                            <input type="submit">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Image/GEG/Patrick.jpg" class="personne" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        <p>L'ancien mécanicien, Patrick le meilleurs ami de Pablo et aussi son meilleurs éléments . </p>
+                    </form>
+            </div> 
+        </div>
+        <div class="row"> 
+            <div class="col-12 col-md-4 horaire">
+                <h2>Horaires d'ouverture</h2>
+                <ul>
+                    <li>Lundi 8h-12h / 13h30-19h </li>
+                    <li>Mardi 8h-12h / 13h30-19h</li>
+                    <li>Mercredi 8h-12h / 13h30-19h</li>
+                    <li>Jeudi 8h-12h / 13h30-19h</li>
+                    <li>Vendredi 8h-12h / 13h30-19h</li>
+                    <li>Samedi 8h-12h / 13h30-19h</li>
+                    <li>Dimanche 8h-12h </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-8 px-0">
+                <a id="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.7807719737543!2d5.337793615090218!3d45.95566300853675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b513ff230fa51%3A0xc647f91b106ce3df!2sOnlineformapro!5e0!3m2!1sfr!2sfr!4v1618316731271!5m2!1sfr!2sfr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <a id="equipe"></a>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./Image/GEG/Berenice.jpg" class="personne" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>La secretaire de l'équipe, Berenice très accueillante avec un beau sourire et vous aide au moindre problème</p>
+                            </div>
                         </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GEG/Mamadou.jpg" class="personne" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Le jeune mécanacien de l'équipe, Mamadou très gentil et compréhensif </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GEG/Pablo.jpg" class="personne" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Le chef de l'équipe, Pablo il sait tous, sait tous faire dans la mécanique depuis bébé .</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Image/GEG/Patrick.jpg" class="personne" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>L'ancien mécanicien, Patrick le meilleurs ami de Pablo et aussi son meilleurs éléments . </p>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
+            </div>
+            <div class="col-12 col-md-4">
+                <div>
+                    <a id="contact"></a>
+                    <h1>Nous contacter</h1>
+                    <hr>
+                    <p>Numero de téléphone (fixe) : 04 74 XX XX XX</p>
+                    <p>Numero de téléphone (mobile) : 06 58 XX XX XX</p>
+                    <p>Adresse E-mail : meca-auto@xxxx.xxx</p>
+                    <p>Adresse : 2 rue Emile de Bravet <br>01500 Amberieu en bugey</p>
                 </div>
             </div>
         </div>
-      <!--Fin Caroussel de l'équipe-->  
     </section>
+    <footer class="container">
+        <div>
+            <h1>Mentions legales</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut 
+                quibusdam asperiores, obcaecati beatae consequuntur non error laudantium doloribus 
+                reprehenderit facere nostrum labore dolor? Assumenda?
+            </p>
+        </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
