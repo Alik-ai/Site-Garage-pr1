@@ -3,6 +3,10 @@
     width: 150px;
     height: 100px;
 }
+/*BODY*/
+.couleur{
+    background-color: blue;
+}
 /*Contact et Mention*/
 hr{
     height: 5px !important;
@@ -34,6 +38,7 @@ label{
     padding-bottom: 15px;
     padding-right: 15px;
 }
+/* SECTION SERVICES */
 /* Les listes */
 ol{
     list-style-type: none;
@@ -42,7 +47,7 @@ ul{
     list-style-type: none;
     margin: 10px;
 }
-/* SECTION SERVICES */
+/*Mise en page*/
 .col-services li{
     font-weight: bold;
 }
@@ -54,7 +59,15 @@ ul{
 #se{
     padding: 15px;
 }
+/*Popover*/
+.Popov{
+    background-color:#51b8f1;
+}
 /*Horaire */
 .horaire{
     border: blue solid 3px;
+}
+/*Mention*/
+.mtct{
+    text-align: center;
 }
