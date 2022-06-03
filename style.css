@@ -5,7 +5,11 @@
 }
 /*BODY*/
 .couleur{
-    background-color: blue;
+    background-color:#51b8f1;
+}
+/*SECTION*/
+.colur{
+    background-color: white;
 }
 /*Contact et Mention*/
 hr{
@@ -26,7 +30,7 @@ hr{
 label{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
-    padding: 5px;
+    padding: 15px;
 }
 #garage{
     font-size: 17px;
@@ -66,8 +70,12 @@ ul{
 /*Horaire */
 .horaire{
     border: blue solid 3px;
+    align-items: center;
 }
 /*Mention*/
 .mtct{
     text-align: center;
+}
+.row{
+    --bs-gutter-x: 0rem;
 }
